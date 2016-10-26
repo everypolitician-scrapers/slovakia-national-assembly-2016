@@ -58,6 +58,10 @@ class MemberPage < Page
     url.tidy
   end
 
+  field :id do
+    first_name + last_name + birth_date
+  end
+
   private
 
   def value_for(strong_text)

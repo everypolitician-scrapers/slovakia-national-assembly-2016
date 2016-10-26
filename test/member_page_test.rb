@@ -33,4 +33,11 @@ describe 'MemberPage' do
 
     page[:source].must_equal url
   end
+
+  it 'should have an id field' do
+    url = 'http://www.nrsr.sk/web/Default.aspx?sid=poslanci/poslanec&PoslanecID=957&CisObdobia=7'
+    page = MemberPage.new(url).to_h
+
+    page[:id].must_equal 'EduardAdamčík1963-01-07'
+  end
 end
