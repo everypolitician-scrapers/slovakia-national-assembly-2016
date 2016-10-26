@@ -7,15 +7,13 @@ require 'pry'
 describe 'MemberPage' do
   it "should return an empty string when there is no data" do
     url = 'http://www.nrsr.sk/web/Default.aspx?sid=poslanci/poslanec&PoslanecID=957&CisObdobia=7'
-    noko = Nokogiri::HTML(open(url).read)
-    page = MemberPage.new(noko).to_h
-    page[:url].must_equal ''
+    page = MemberPage.new(url).to_h
+    page[:website].must_equal ''
   end
 
   it 'should scrape page data correctly' do
     url = 'http://www.nrsr.sk/web/Default.aspx?sid=poslanci/poslanec&PoslanecID=957&CisObdobia=7'
-    noko = Nokogiri::HTML(open(url).read)
-    page = MemberPage.new(noko).to_h
+    page = MemberPage.new(url).to_h
 
     page[:first_name].must_equal 'Eduard'
     page[:last_name].must_equal 'Adamčík'
