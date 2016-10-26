@@ -63,7 +63,7 @@ class MemberPage < Page
   end
 
   field :id do
-    first_name + last_name + birth_date
+    url.match(/PoslanecID=(\d+)/)[1]
   end
 
   private
