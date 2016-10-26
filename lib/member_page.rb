@@ -18,6 +18,10 @@ class MemberPage < Page
     value_for('Priezvisko')
   end
 
+  field :name do
+    first_name + " " + last_name
+  end
+
   field :party do
     value_for('Kandidoval(a) za')
   end

@@ -17,6 +17,7 @@ describe 'MemberPage' do
 
     page[:first_name].must_equal 'Eduard'
     page[:last_name].must_equal 'Adamčík'
+    page[:name].must_equal 'Eduard Adamčík'
     page[:party].must_equal '#SIEŤ'
     page[:birth_date].must_equal '1963-01-07'
     page[:residence].must_equal 'Košice'
