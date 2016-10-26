@@ -24,6 +24,7 @@ describe 'MemberPage' do
     page[:nationality].must_equal 'slovenská'
     page[:region].must_equal 'Košický'
     page[:email].must_equal 'eduard_adamcik@nrsr.sk'
+    page[:image].must_equal 'http://www.nrsr.sk/web/dynamic/PoslanecPhoto.aspx?PoslanecID=957&ImageWidth=140'
   end
 
   it 'should record the correct page source' do

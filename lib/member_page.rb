@@ -50,6 +50,10 @@ class MemberPage < Page
     href_for('Www')
   end
 
+  field :image do
+    noko.css(".mp_foto img @src").text
+  end
+
   field :source do
     url.tidy
   end
