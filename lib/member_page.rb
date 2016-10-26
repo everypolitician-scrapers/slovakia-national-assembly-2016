@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'nokogiri_document'
+require_relative 'page'
 
 class String
   def tidy
@@ -8,10 +8,7 @@ class String
   end
 end
 
-class MemberPage < NokogiriDocument
-  def initialize(noko)
-    @noko = noko
-  end
+class MemberPage < Page
 
   field :first_name do
     value_for('Meno')
