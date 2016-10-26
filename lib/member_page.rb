@@ -46,7 +46,7 @@ class MemberPage < Page
     href_for('E-mail').gsub('mailto:','')
   end
 
-  field :url do
+  field :website do
     href_for('Www')
   end
 
