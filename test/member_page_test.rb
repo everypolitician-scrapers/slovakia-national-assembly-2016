@@ -25,4 +25,11 @@ describe 'MemberPage' do
     page[:region].must_equal 'Košický'
     page[:email].must_equal 'eduard_adamcik@nrsr.sk'
   end
+
+  it 'should record the correct page source' do
+    url = 'http://www.nrsr.sk/web/Default.aspx?sid=poslanci/poslanec&PoslanecID=957&CisObdobia=7'
+    page = MemberPage.new(url).to_h
+
+    page[:source].must_equal url
+  end
 end

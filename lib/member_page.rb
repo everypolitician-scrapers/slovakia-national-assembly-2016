@@ -50,6 +50,10 @@ class MemberPage < Page
     href_for('Www')
   end
 
+  field :source do
+    url.tidy
+  end
+
   private
 
   def value_for(strong_text)
