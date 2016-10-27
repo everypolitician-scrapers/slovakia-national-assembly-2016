@@ -66,6 +66,10 @@ class MemberPage < Page
     url.match(/PoslanecID=(\d+)/)[1]
   end
 
+  field :term do
+    7
+  end
+
   private
 
   def value_for(strong_text)
