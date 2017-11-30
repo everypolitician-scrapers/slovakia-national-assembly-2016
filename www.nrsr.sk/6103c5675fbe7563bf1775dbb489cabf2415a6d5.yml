@@ -26,14 +26,14 @@ response:
     Server:
     - ''
     Set-Cookie:
-    - ASP.NET_SessionId=fpqbrt2kb2kb04r1ibskw0mf; path=/; HttpOnly
+    - ASP.NET_SessionId=ockhwxncsqufy2u2nyythy45; path=/; HttpOnly
     X-Powered-By:
     - ASP.NET
     Date:
-    - Fri, 24 Nov 2017 11:10:53 GMT
+    - Thu, 30 Nov 2017 17:18:29 GMT
     Content-Length:
-    - '68882'
+    - '68881'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Fri, 24 Nov 2017 11:10:53 GMT
+recorded_at: Thu, 30 Nov 2017 17:18:30 GMT
