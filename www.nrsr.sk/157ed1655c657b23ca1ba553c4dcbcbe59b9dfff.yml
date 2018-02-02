@@ -1,0 +1,39 @@
+---
+request:
+  method: get
+  uri: http://www.nrsr.sk/web/Default.aspx?CisObdobia=7&PoslanecID=986&sid=poslanci/poslanec
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Language:
+    - en
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - "*/*"
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Cache-Control:
+    - private
+    Content-Type:
+    - text/html; charset=utf-8
+    Server:
+    - ''
+    Set-Cookie:
+    - ASP.NET_SessionId=2v1e3rnf2uc3xr55kumbbx55; path=/; HttpOnly
+    X-Powered-By:
+    - ASP.NET
+    Date:
+    - Fri, 02 Feb 2018 14:12:54 GMT
+    Content-Length:
+    - '69649'
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Fri, 02 Feb 2018 14:12:56 GMT
