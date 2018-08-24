@@ -1,18 +1,27 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
+
+ruby '2.4.1'
+
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
-ruby '2.3.1'
-
-gem 'colorize'
-gem 'field_serializer', github: 'everypolitician/field_serializer'
+gem 'combine_popolo_memberships', github: 'everypolitician/combine_popolo_memberships'
+gem 'execjs'
+gem 'minitest'
+gem 'minitest-around'
+gem 'minitest-vcr'
 gem 'nokogiri'
 gem 'open-uri-cached'
 gem 'pry'
-gem 'require_all'
-gem 'rubocop'
-gem 'scraped_page_archive', github: 'everypolitician/scraped_page_archive'
-gem 'scraperwiki', github: 'openaustralia/scraperwiki-ruby', branch: 'morph_defaults'
-gem 'minitest'
 gem 'rake'
+gem 'rest-client'
+gem 'rubocop'
+gem 'scraped', github: 'everypolitician/scraped', branch: 'scraper-class'
+gem 'scraped_page_archive', github: 'everypolitician/scraped_page_archive'
+gem 'scraper_test', github: 'everypolitician/scraper_test'
+gem 'scraperwiki', github: 'openaustralia/scraperwiki-ruby',
+                   branch: 'morph_defaults'
+gem 'table_unspanner', github: 'everypolitician/table_unspanner'
+gem 'vcr'
+gem 'webmock'
