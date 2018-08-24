@@ -9,8 +9,8 @@ require 'nokogiri'
 
 require_rel 'lib'
 
-# require 'open-uri/cached'
-require 'scraped_page_archive/open-uri'
+require 'open-uri/cached'
+# require 'scraped_page_archive/open-uri'
 
 LIST_PAGE = 'https://www.nrsr.sk/web/?sid=poslanci/zoznam_abc'.freeze
 BASE = 'https://www.nrsr.sk/web/'.freeze
@@ -21,5 +21,6 @@ members = AllMembersPage.new(LIST_PAGE)
 warn "Found #{members.count} members"
 
 members.each do |member|
+  puts member.reject { |_, v| v.to_s.empty? }.sort_by { |k, _| k }.to_h if ENV['MORPH_DEBUG']
   ScraperWiki.save_sqlite([:id], member)
 end
