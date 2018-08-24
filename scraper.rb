@@ -12,8 +12,8 @@ require_rel 'lib'
 # require 'open-uri/cached'
 require 'scraped_page_archive/open-uri'
 
-LIST_PAGE = 'http://www.nrsr.sk/web/?sid=poslanci/zoznam_abc'.freeze
-BASE = 'http://www.nrsr.sk/web/'.freeze
+LIST_PAGE = 'https://www.nrsr.sk/web/?sid=poslanci/zoznam_abc'.freeze
+BASE = 'https://www.nrsr.sk/web/'.freeze
 
 members = AllMembersPage.new(LIST_PAGE)
                         .to_h[:member_relative_urls]
